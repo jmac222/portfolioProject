@@ -259,3 +259,39 @@ h2 {
     display: flex;
     justify-content: start;
 }
+
+#slider{
+    width: 720px;
+    height: 400px;
+    overflow: hidden;
+    margin: auto;
+    .slides{
+        display: block;
+        width: 6000px;
+        height: 400px;
+    }
+
+    .slide{
+        float: left;
+        width: 720px;
+        list-style-type: none;
+        height: 400px;
+    }
+    .slide1{
+        background-color: red;
+    }
+    .slide2{
+        background-color: red;
+    }
+    .slide3{
+        background-color: red;
+    }
+    .slide4{
+        background-color: red;
+    }
+    .slide5{
+        background-color: red;
+    }
+}
+
+

@@ -1,0 +1,579 @@
+body {
+  font-family: sans-serif;
+  background-color: #040404;
+  color: #fff;
+  position: relative;
+  background: transparent;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  background: #040404;
+  background-size: cover;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  z-index: -1;
+}
+
+a {
+  color: greenyellow;
+  text-decoration: none;
+}
+
+a:hover {
+  color: green;
+  text-decoration: none;
+}
+
+#landing {
+  width: 100%;
+  height: 100vh;
+  background: url(https://images.pexels.com/photos/4534200/pexels-photo-4534200.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500) top right;
+  background-size: cover;
+  position: relative;
+}
+
+#landing::before {
+  content: "";
+  background: rgba(0, 0, 0, 0.55);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.landing-container {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 15px;
+}
+
+h1 {
+  margin: 0 0 10px 0;
+  font-size: 64px;
+  font-family: "Brush Script MT", "Brush Script Std", cursive;
+  color: #fff;
+}
+
+h2 {
+  color: #eee;
+  margin-bottom: 50px;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.btn-scroll {
+  font-size: 20px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: grey;
+  animation: up-down 1s ease-in-out infinite alternate-reverse both;
+}
+
+.btn-scroll i {
+  font-size: 48px;
+}
+
+.btn-scroll:hover {
+  color: orange;
+}
+
+.skills .progress {
+  height: 60px;
+  display: block;
+  background: none;
+  border-radius: 0;
+}
+
+.skills .progress .skill {
+  padding: 10px 0;
+  margin: 0;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 500;
+  font-family: sans-serif;
+  color: #fff;
+}
+
+.skills .progress .skill .val {
+  float: right;
+  font-style: normal;
+}
+
+.skills .progress-bar-wrap {
+  background: lightgray;
+}
+
+.skills .progress-bar {
+  height: 10px;
+  -webkit-transition: 0.9s;
+  transition: 0.9s;
+  background-color: green;
+}
+
+.resume .resume-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.resume .resume-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid green;
+  position: relative;
+}
+
+.resume .resume-item h4 {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  color: green;
+  margin-bottom: 10px;
+}
+
+.resume .resume-item h5 {
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.resume .resume-item ul {
+  padding-left: 20px;
+}
+
+.resume .resume-item ul li {
+  padding-bottom: 0;
+}
+
+.resume .resume-item:last-child {
+  padding-bottom: 0;
+}
+
+.resume .resume-item::before {
+  content: "";
+  width: 16px;
+  position: absolute;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: lightgreen;
+  border: 2px solid green;
+}
+
+.text-js {
+  height: 85px;
+}
+
+.cursor {
+  display: block;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: -5px;
+  width: 2px;
+  /* Change colour of Cursor Here */
+  background-color: white;
+  z-index: 1;
+  -webkit-animation: flash 0.5s none infinite alternate;
+          animation: flash 0.5s none infinite alternate;
+}
+
+@-webkit-keyframes flash {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes flash {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.glitch {
+  color: white;
+  font-size: 30px;
+  position: relative;
+  width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 200px;
+}
+
+@-webkit-keyframes noise-anim {
+  0% {
+    clip: rect(99px, 9999px, 31px, 0);
+  }
+  5% {
+    clip: rect(60px, 9999px, 91px, 0);
+  }
+  10% {
+    clip: rect(65px, 9999px, 23px, 0);
+  }
+  15% {
+    clip: rect(10px, 9999px, 34px, 0);
+  }
+  20% {
+    clip: rect(13px, 9999px, 21px, 0);
+  }
+  25% {
+    clip: rect(79px, 9999px, 1px, 0);
+  }
+  30% {
+    clip: rect(73px, 9999px, 54px, 0);
+  }
+  35% {
+    clip: rect(66px, 9999px, 86px, 0);
+  }
+  40% {
+    clip: rect(21px, 9999px, 31px, 0);
+  }
+  45% {
+    clip: rect(98px, 9999px, 33px, 0);
+  }
+  50% {
+    clip: rect(98px, 9999px, 98px, 0);
+  }
+  55% {
+    clip: rect(81px, 9999px, 6px, 0);
+  }
+  60% {
+    clip: rect(27px, 9999px, 9px, 0);
+  }
+  65% {
+    clip: rect(73px, 9999px, 39px, 0);
+  }
+  70% {
+    clip: rect(45px, 9999px, 22px, 0);
+  }
+  75% {
+    clip: rect(95px, 9999px, 57px, 0);
+  }
+  80% {
+    clip: rect(59px, 9999px, 22px, 0);
+  }
+  85% {
+    clip: rect(43px, 9999px, 79px, 0);
+  }
+  90% {
+    clip: rect(85px, 9999px, 81px, 0);
+  }
+  95% {
+    clip: rect(61px, 9999px, 41px, 0);
+  }
+  100% {
+    clip: rect(86px, 9999px, 71px, 0);
+  }
+}
+
+@keyframes noise-anim {
+  0% {
+    clip: rect(99px, 9999px, 31px, 0);
+  }
+  5% {
+    clip: rect(60px, 9999px, 91px, 0);
+  }
+  10% {
+    clip: rect(65px, 9999px, 23px, 0);
+  }
+  15% {
+    clip: rect(10px, 9999px, 34px, 0);
+  }
+  20% {
+    clip: rect(13px, 9999px, 21px, 0);
+  }
+  25% {
+    clip: rect(79px, 9999px, 1px, 0);
+  }
+  30% {
+    clip: rect(73px, 9999px, 54px, 0);
+  }
+  35% {
+    clip: rect(66px, 9999px, 86px, 0);
+  }
+  40% {
+    clip: rect(21px, 9999px, 31px, 0);
+  }
+  45% {
+    clip: rect(98px, 9999px, 33px, 0);
+  }
+  50% {
+    clip: rect(98px, 9999px, 98px, 0);
+  }
+  55% {
+    clip: rect(81px, 9999px, 6px, 0);
+  }
+  60% {
+    clip: rect(27px, 9999px, 9px, 0);
+  }
+  65% {
+    clip: rect(73px, 9999px, 39px, 0);
+  }
+  70% {
+    clip: rect(45px, 9999px, 22px, 0);
+  }
+  75% {
+    clip: rect(95px, 9999px, 57px, 0);
+  }
+  80% {
+    clip: rect(59px, 9999px, 22px, 0);
+  }
+  85% {
+    clip: rect(43px, 9999px, 79px, 0);
+  }
+  90% {
+    clip: rect(85px, 9999px, 81px, 0);
+  }
+  95% {
+    clip: rect(61px, 9999px, 41px, 0);
+  }
+  100% {
+    clip: rect(86px, 9999px, 71px, 0);
+  }
+}
+
+.glitch:after {
+  content: attr(data-text);
+  position: absolute;
+  left: 2px;
+  text-shadow: -1px 0 red;
+  top: 0;
+  color: white;
+  background: black;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim 2s infinite linear alternate-reverse;
+}
+
+@-webkit-keyframes noise-anim-2 {
+  0% {
+    clip: rect(34px, 9999px, 43px, 0);
+  }
+  5% {
+    clip: rect(93px, 9999px, 75px, 0);
+  }
+  10% {
+    clip: rect(85px, 9999px, 6px, 0);
+  }
+  15% {
+    clip: rect(55px, 9999px, 11px, 0);
+  }
+  20% {
+    clip: rect(68px, 9999px, 14px, 0);
+  }
+  25% {
+    clip: rect(27px, 9999px, 60px, 0);
+  }
+  30% {
+    clip: rect(35px, 9999px, 73px, 0);
+  }
+  35% {
+    clip: rect(76px, 9999px, 62px, 0);
+  }
+  40% {
+    clip: rect(71px, 9999px, 73px, 0);
+  }
+  45% {
+    clip: rect(68px, 9999px, 98px, 0);
+  }
+  50% {
+    clip: rect(100px, 9999px, 96px, 0);
+  }
+  55% {
+    clip: rect(21px, 9999px, 30px, 0);
+  }
+  60% {
+    clip: rect(78px, 9999px, 32px, 0);
+  }
+  65% {
+    clip: rect(98px, 9999px, 59px, 0);
+  }
+  70% {
+    clip: rect(9px, 9999px, 65px, 0);
+  }
+  75% {
+    clip: rect(50px, 9999px, 67px, 0);
+  }
+  80% {
+    clip: rect(29px, 9999px, 55px, 0);
+  }
+  85% {
+    clip: rect(51px, 9999px, 69px, 0);
+  }
+  90% {
+    clip: rect(86px, 9999px, 48px, 0);
+  }
+  95% {
+    clip: rect(24px, 9999px, 73px, 0);
+  }
+  100% {
+    clip: rect(11px, 9999px, 42px, 0);
+  }
+}
+
+@keyframes noise-anim-2 {
+  0% {
+    clip: rect(34px, 9999px, 43px, 0);
+  }
+  5% {
+    clip: rect(93px, 9999px, 75px, 0);
+  }
+  10% {
+    clip: rect(85px, 9999px, 6px, 0);
+  }
+  15% {
+    clip: rect(55px, 9999px, 11px, 0);
+  }
+  20% {
+    clip: rect(68px, 9999px, 14px, 0);
+  }
+  25% {
+    clip: rect(27px, 9999px, 60px, 0);
+  }
+  30% {
+    clip: rect(35px, 9999px, 73px, 0);
+  }
+  35% {
+    clip: rect(76px, 9999px, 62px, 0);
+  }
+  40% {
+    clip: rect(71px, 9999px, 73px, 0);
+  }
+  45% {
+    clip: rect(68px, 9999px, 98px, 0);
+  }
+  50% {
+    clip: rect(100px, 9999px, 96px, 0);
+  }
+  55% {
+    clip: rect(21px, 9999px, 30px, 0);
+  }
+  60% {
+    clip: rect(78px, 9999px, 32px, 0);
+  }
+  65% {
+    clip: rect(98px, 9999px, 59px, 0);
+  }
+  70% {
+    clip: rect(9px, 9999px, 65px, 0);
+  }
+  75% {
+    clip: rect(50px, 9999px, 67px, 0);
+  }
+  80% {
+    clip: rect(29px, 9999px, 55px, 0);
+  }
+  85% {
+    clip: rect(51px, 9999px, 69px, 0);
+  }
+  90% {
+    clip: rect(86px, 9999px, 48px, 0);
+  }
+  95% {
+    clip: rect(24px, 9999px, 73px, 0);
+  }
+  100% {
+    clip: rect(11px, 9999px, 42px, 0);
+  }
+}
+
+.glitch:before {
+  content: attr(data-text);
+  position: absolute;
+  left: -2px;
+  text-shadow: 1px 0 blue;
+  top: 0;
+  color: white;
+  background: black;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim-2 3s infinite linear alternate-reverse;
+}
+
+.section-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+#slider {
+  width: 720px;
+  height: 400px;
+  overflow: hidden;
+  margin: auto;
+}
+
+#slider .slides {
+  display: block;
+  width: 6000px;
+  height: 400px;
+}
+
+#slider .slide {
+  float: left;
+  width: 720px;
+  list-style-type: none;
+  height: 400px;
+}
+
+#slider .slide1 {
+  background-color: red;
+}
+
+#slider .slide2 {
+  background-color: red;
+}
+
+#slider .slide3 {
+  background-color: red;
+}
+
+#slider .slide4 {
+  background-color: red;
+}
+
+#slider .slide5 {
+  background-color: red;
+}
+/*# sourceMappingURL=style.css.map */
